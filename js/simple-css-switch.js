@@ -31,6 +31,7 @@ function simpleCssSwitch(theme) {
         choosenStyle = theme;
     }
     var stylesMenuContainer = document.getElementById('s-css-s--menu');
+    stylesMenuContainer.classList.add('s-css-s-style--' + choosenStyle);
     var styleButtons = [];
     var stylesAvailable = Array.prototype.slice.call(
         document.querySelectorAll('.s-css-s--style')
