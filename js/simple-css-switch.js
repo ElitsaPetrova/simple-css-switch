@@ -39,6 +39,9 @@ function simpleCssSwitch(theme) {
     menuTitle.innerText = 'Themes';
     stylesMenuContainer.appendChild(menuTitle);
 
+    var menuWrap = document.createElement('div');
+    menuWrap.classList.add('s-css-s--wrapper');
+
     var stylesAvailable = Array.prototype.slice.call(
         document.querySelectorAll('.s-css-s--style')
     );
@@ -54,8 +57,9 @@ function simpleCssSwitch(theme) {
                 chooseStyle(style.title);
                 markActiveButton(e.target);
             });
+        stylesMenuContainer.appendChild(menuWrap);
         styleButtons.push(styleOptionButton);
-        stylesMenuContainer.appendChild(styleOptionButton);
+        menuWrap.appendChild(styleOptionButton);
     });
 
     var activeStyle = localStorage.getItem('s-css-s--active-style');
