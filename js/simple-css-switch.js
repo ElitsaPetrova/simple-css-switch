@@ -26,6 +26,10 @@ function simpleCssSwitch(theme) {
             titles: true
         }
     };
+    var choosenStyle = "default";
+    if (theme && scsssStyles[theme]) {
+        choosenStyle = theme;
+    }
     var stylesMenuContainer = document.getElementById('s-css-s--menu');
     var styleButtons = [];
     var stylesAvailable = Array.prototype.slice.call(
