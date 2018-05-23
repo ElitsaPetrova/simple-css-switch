@@ -62,6 +62,11 @@ function simpleCssSwitch(theme) {
         menuWrap.appendChild(styleOptionButton);
     });
 
+    menuTitle.addEventListener(
+        'click', function() {
+            menuWrap.classList.toggle("s-css-s--menu-visible");
+        });
+
     var activeStyle = localStorage.getItem('s-css-s--active-style');
     if (activeStyle) {
         styleButtons.forEach(function(btn){
