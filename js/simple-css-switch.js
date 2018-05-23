@@ -1,4 +1,31 @@
-function simpleCssSwitch() {
+function simpleCssSwitch(theme) {
+    var scsssStyles = {
+        "default" : {
+            title: "themes",
+            numbers: false,
+            titles: true
+        },
+        "themes-numbers" : {
+            title: "themes",
+            numbers: true,
+            titles: false
+        },
+        "themes-all" : {
+            title: "themes",
+            numbers: true,
+            titles: true
+        },
+        "numbers" : {
+            title: "undefined",
+            numbers: true,
+            titles: false
+        },
+        "titles" : {
+            title: "undefined",
+            numbers: false,
+            titles: true
+        }
+    };
     var stylesMenuContainer = document.getElementById('s-css-s--menu');
     var styleButtons = [];
     var stylesAvailable = Array.prototype.slice.call(
