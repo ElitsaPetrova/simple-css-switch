@@ -39,3 +39,27 @@
     color: #ddd;
     background-color: #122112;
 }
+.s-css-s-style--default .s-css-s--idx,
+.s-css-s-style--titles .s-css-s--idx,
+.s-css-s-style--themes-numbers .s-css-s--title,
+.s-css-s-style--numbers .s-css-s--title,
+.s-css-s-style--titles #s-css-s--menu-title,
+.s-css-s-style--numbers #s-css-s--menu-title,
+.s-css-s-style--default .s-css-s--wrapper,
+.s-css-s-style--themes-numbers .s-css-s--wrapper,
+.s-css-s-style--themes-all .s-css-s--wrapper {
+    display: none;
+}
+.s-css-s-style--themes-all .s-css-s--idx:after {
+    content: '.';
+    margin-right: .2em;
+}
+#s-css-s--menu-title:hover,
+.s-css-s--button:hover{
+    cursor: pointer;
+}
+.s-css-s-style--default .s-css-s--menu-visible,
+.s-css-s-style--themes-numbers .s-css-s--menu-visible,
+.s-css-s-style--themes-all .s-css-s--menu-visible {
+    display: block;
+}
