@@ -33,6 +33,12 @@ function simpleCssSwitch(theme) {
     var stylesMenuContainer = document.getElementById('s-css-s--menu');
     stylesMenuContainer.classList.add('s-css-s-style--' + choosenStyle);
     var styleButtons = [];
+
+    var menuTitle = document.createElement('div');
+    menuTitle.setAttribute("id", "s-css-s--menu-title");
+    menuTitle.innerText = 'Themes';
+    stylesMenuContainer.appendChild(menuTitle);
+
     var stylesAvailable = Array.prototype.slice.call(
         document.querySelectorAll('.s-css-s--style')
     );
