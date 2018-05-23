@@ -47,7 +47,8 @@ function simpleCssSwitch(theme) {
         var styleOptionButton = document.createElement('button');
         styleOptionButton.setAttribute('title', style.title);
         styleOptionButton.classList.add('s-css-s--button', cssFileAsClass);
-        styleOptionButton.innerText = idx;
+        styleOptionButton.innerHTML = '<span class="s-css-s--idx">' +  idx + '</span>';
+        styleOptionButton.innerHTML += '<span class="s-css-s--title">' +  style.title + '</span>';
         styleOptionButton.addEventListener(
             'click', function(e) {
                 chooseStyle(style.title);
