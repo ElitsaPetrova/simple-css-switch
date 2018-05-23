@@ -13,6 +13,20 @@
       <link class="s-css-s--style" rel="stylesheet alternate" title="Green style"   href="css/green.css">
     #+END_SRC
 *** Add attribute ~onload="simpleCssSwitch()"~ to *body* tag
+    This include string "themes", and show only titles of themes.
+
+    If you want to use different theme style, you can choose from the predifined:
+
+    - themes-all :: include string "themes", show index and title of the theme
+    - themes-numbers :: include string "themes", and show only the numbers as title
+    - default :: include string "themes", and show only titles of themes
+    - numbers :: show only the numbers
+    - titles :: show only the titles
+
+    For example if you want to use the theme style /numbers/ you need to do this:
+    #+BEGIN_SRC html
+      <body onload="simpleCssSwitch('numbers')">
+    #+END_SRC
 *** Insert container for CSS switch menu
     Place where you want following snippet
     #+BEGIN_SRC html
